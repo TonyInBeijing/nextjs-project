@@ -2,14 +2,15 @@
  * @Author: TonyInBeijing
  * @Date: 2022-07-31 22:20:13
  * @LastEditors: TonyInBeijing
- * @LastEditTime: 2022-07-31 22:20:55
+ * @LastEditTime: 2022-08-01 22:38:39
  * @FilePath: /nextjs-project/pages/index.js
  * @Description: 
  * 
  */
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -22,7 +23,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Learn <a href="https://nextjs.org">Next.js!</a>
+          {/* Learn <a href="https://nextjs.org">Next.js!</a> */}
+          Read <Link href="/posts/first-post"><a>this page!</a></Link>
         </h1>
 
         <p className={styles.description}>
